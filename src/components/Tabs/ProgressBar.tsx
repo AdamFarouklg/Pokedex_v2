@@ -1,6 +1,12 @@
 import React from 'react'
+
+interface ProgressProps {
+  bgcolor: string;
+  progress: number;
+  height: number;
+}
  
-const Progress_bar = ({bgcolor,progress,height}) => {
+const Progress_bar = ({bgcolor,progress,height}: ProgressProps) => {
     
     const Parentdiv = {
         height: height,
@@ -8,7 +14,8 @@ const Progress_bar = ({bgcolor,progress,height}) => {
         borderRadius: 40,
         margin: 0,
         marginLeft: -200,
-        marginTop: 7
+        marginTop: 7,
+        backgroundColor: 'grey'
       }
      
       const Childdiv = {
@@ -17,6 +24,8 @@ const Progress_bar = ({bgcolor,progress,height}) => {
         backgroundColor: bgcolor,
         borderRadius:40,
         textAlign: 'right',
+        marginTop: 0,
+        marginLeft: -3
       }
      
       const progresstext = {
