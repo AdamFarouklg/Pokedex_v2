@@ -4,7 +4,6 @@ import TabContent from "./TabContent";
 import FirstTab from "./About";
 import SecondTab from "./Stats";
 import { ListPokemon } from "src/interfaces/pokemon.interface";
-import "./Tabs.css";
 
 const Tabs = () =>  {
   const [activeTab, setActiveTab] = useState("tab2");
